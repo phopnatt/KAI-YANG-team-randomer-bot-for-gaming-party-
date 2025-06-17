@@ -6,7 +6,7 @@ import asyncio
 # Intents ต้องเปิด message_content ด้วย
 intents = discord.Intents.all()
 intents.message_content = True  # สำคัญมาก!!
-from mysever import server_on
+
 
 # สร้าง Bot object
 bot = commands.Bot(command_prefix='~', intents=discord.Intents.all())
@@ -186,6 +186,6 @@ async def pick(ctx):
 
 
 
-server_on
+
 # รันบอท
 bot.run(os.getenv('token'))
